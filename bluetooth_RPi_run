@@ -1,0 +1,6 @@
+
+# we create the symbolic link (modify with the address of your device)
+sudo rfcomm bind rfcomm0 XX:XX:XX:XX:XX:XX
+
+# now we can run the Processing sketch
+DISPLAY=:0 processing-java --sketch=/home/pi/bluetooth_RPi --present
